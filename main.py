@@ -168,7 +168,7 @@ while( (fuzError > EPSILON  ) and (iteration <= maxIteration) ):
             fuzzyWeight = pow(mf[b][a], m)
             part = euclidean(data[b], centres[a],dimension)
             fuzError += fuzzyWeight * part
-    print('Критерій:',fuzError)
+    print('Criterion value:',fuzError)
     iteration += 1
 if (dimension == 2):
     show2DClusters(centres,data)
